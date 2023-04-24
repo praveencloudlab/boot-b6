@@ -1,0 +1,16 @@
+package com;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		String[] cart1= {"P001","P002"};
+		
+		BillingImpl biller=new BillingImpl();
+		double total = biller.getCartItemsTotal(cart1);
+		System.out.println("Cart1 Total: "+total);
+		
+
+	}
+
+}

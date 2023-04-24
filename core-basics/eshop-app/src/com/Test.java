@@ -1,0 +1,41 @@
+package com;
+
+public class Test {
+	/*
+	 *  Types of Objects? : 2 types
+	 *  ==========================
+	 *  1.dependency object: works independently. Never depends on other objects
+	 *  2.dependent object : always depends on dependency object
+	 *  
+	 */
+
+	public static void main(String[] args) {
+		
+		// SOLI - D - 
+		
+		
+		String[] cart1= {"P001","P002"};
+		String[] cart2= {"P001","P002","P003"};
+		
+		//=================================================
+			PriceMatrixImpl price=new PriceMatrixImpl(); // dependency class
+			BillingImpl biller=new BillingImpl(); // dependent class
+		//=================================================
+
+			biller.setPrice(price); // injecting/passing dependency object (price) to the dependent class object (biller) is called dependency injection : DI
+		
+		
+			
+	//=======================================================	
+		double total = biller.getCartItemsTotal(cart1);
+		System.out.println("Cart1 Total: "+total);
+
+		total=biller.getCartItemsTotal(cart2);
+		System.out.println("Cart2 Total: "+total);
+	//=======================================================
+
+		
+
+	}
+
+}

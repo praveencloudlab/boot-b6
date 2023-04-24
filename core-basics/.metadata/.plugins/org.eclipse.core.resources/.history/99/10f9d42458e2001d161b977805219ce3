@@ -1,0 +1,43 @@
+package com;
+
+//dependent class
+public class BillingImpl {
+	
+	/*
+	 * 	Design issues
+	 * 	=====================
+	 *  -> too many dependency objects
+	 *  	-> performace goes down
+	 *  	-> memory issues
+	 *  
+	 *  why this issues happened?
+	 *  ============================
+	 *  -> dependent class creating dependency objects directly
+	 *  
+	 *  What is the solution?
+	 *  =========================
+	 *  -> Never create dependency objects in the dependent class
+	 *  -> Use techniques like JNDI .. etc
+	 * 		-> location of JNDI is tightly coupled with dependent class
+	 *  
+	 *  
+	 *  	
+	 * 
+	 * 
+	 */
+
+	public double getCartItemsTotal(String[] cart) {
+
+		
+		//PriceMatrixImpl price = new PriceMatrixImpl(); //dependency
+
+		double total = 0.0;
+
+		for (String itemCode : cart) {
+			total = total + price.getItemPrice(itemCode);
+		}
+		
+		return total;
+
+	}
+}
