@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cts</groupId>
-	<artifactId>1-boot-corev1</artifactId>
+	<artifactId>2-boot-corev1</artifactId>
 	<version>1.0</version>
-	<name>1-boot-corev1</name>
+	<name>2-boot-corev1</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
