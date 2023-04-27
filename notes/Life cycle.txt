@@ -1,0 +1,83 @@
+
+ class AccountService{
+
+   private ArrayList<Notification> notifications;
+   // where Notificatin is an interface wgich contains new notification impl
+
+   void your_method(){
+
+      notifications.add(SMS)
+      notifications.add(EMAIL)
+      notifications.add(WHATSAPP)
+	
+   }
+
+        
+
+ }
+
+
+
+
+
+
+
+
+
+//dao
+class UserDaoImpl{
+    public UserDTO findUserById(int userId){}
+}   
+
+
+// model / pojo / bean
+class User{
+private int userId;
+private String usrName;
+private String password;
+...
+// getters and setters
+}
+
+// dto
+class UserDTO{
+ 
+ .. convert DTO into model/bean/pojo
+
+}
+
+//service 
+class UserServiceImpl{
+
+    private UserDaoImpl userDao;
+
+    public User findUser(String userId){
+
+		UserDTO userObj=userDao.findUserById(userId);
+
+     //User user=(User)userObj;
+   
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

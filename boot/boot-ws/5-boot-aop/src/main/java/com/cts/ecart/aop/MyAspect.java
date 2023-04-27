@@ -1,16 +1,17 @@
 package com.cts.ecart.aop;
 
-import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 @Component
 @Aspect
 public class MyAspect {
+	
+    private static final Logger logger = LoggerFactory.getLogger(MyAspect.class);
 	
 	
 	/*
@@ -29,6 +30,13 @@ public class MyAspect {
 	public void f3(ProceedingJoinPoint pj) throws Throwable {
 		
 		System.out.println(">> Around advice ....");
+        logger.info("Around Advice is initiated....");
+        logger.error("Error.. can not implement code of ...");
+        logger.debug("Try to use this solution...");
+        
+       
+
+
 		
 		// if conditions ...
 		
