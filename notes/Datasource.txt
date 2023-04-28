@@ -1,0 +1,49 @@
+step 1:: Spring boot  Datasource : 5 types
+===================================
+1.Hikari CP : default datasource
+2.Tomcat
+3.DBCP2
+4.OracleUCP
+5.Generic datasource
+
+step2::get JdbcTemplate from container
+
+
+
+step3:: database operations : 2 types
+
+ type1: Generic map database operations
+ type2: domain specific database operations
+
+
+	1. selecting ringle row operations
+	2. selecting multirow operatins
+
+
+  type1: Generic database operations
+================================================
+  => fetches database record in the form of Map
+		 -> key => column namw
+      -> value => value of a database table column
+
+
+  Generic Queries
+================================
+• JdbcTemplate returns each row of a ResultSet as a Map
+->  When expecting a single row	
+		– Use queryForMap(..)
+-> When expecting multiple rows
+		– Use queryForList(..)
+• Useful for ad hoc reporting, testing use cases
+– The data fetched does not need mapping to a Java object
+
+
+
+
+
+
+
+
+
+
+
