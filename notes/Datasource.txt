@@ -39,6 +39,34 @@ step3:: database operations : 2 types
 
 
 
+    ORM : Object relational mapping
+==========================================================
+
+    Repository :: marker interface
+
+	CrudRepository extends  Repository
+   ListCrudRepository extends CrudRepository
+   JpaRepository extends ListCrudRepository
+   
+   PagingAndSortingRepository extends Repository
+   ListPagingAndSortingRepository extends PagingAndSortingRepository
+   JpaRepository extends ListPagingAndSortingRepository
+
+   JpaRepository extends QueryByExampleExecutor
+
+   All total 31 basic database built in methods to perfom common DB operations
+
+   
+   
+   
+
+
+    
+
+  
+
+
+
 
 
 
