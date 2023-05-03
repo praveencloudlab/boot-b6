@@ -1,0 +1,84 @@
+Spring WEB
+===================
+types web applications : 2 types
+type-1: request driven
+type-2: event driven
+
+type-1: request driven
+==============================
+every invocation of a server by a request object
+Ex: Servlets, JSP, Structs, Spring Web .. etc
+
+type-2: event driven
+=========================
+every request to the server through an event. An event is nothjinhg but an action.
+ex: JSF
+
+Spring Web
+=============
+=> MVC based
+=> Handles all requests by a built in servlet controller 'DispacterServlet'
+=> Its a web framework
+
+
+Spring web development further can be divided into two types of develpment
+type-1: web development
+type-2: web service development
+
+
+  web development
+============================
+=> everything in this category handles by the spring web framework.
+=> client sends requst to the server by request object, and server sends the response 
+=> Its more above template driven development by many types of views
+
+ Types of views
+================
+1. web / HTML view
+2. PDF
+3. Audio / video
+4. document
+
+
+advantages of spring web fra,ework
+========================================
+1. framework based web development. almost everything is automated
+2. multi-tire development
+
+
+
+ Request methods
+============================
+1.GET 
+2.POST
+3.PUT
+4.PATCH
+5.DELETE
+
+
+ Web Services
+=========================
+
+SOAP : XMLbased
+REST : text / xml based
+
+
+
+   
+ 1.JAX-WS : SOAP
+ 2.JAX-RS : REST
+	java : RESTeasy, Apache CXF, Jersy
+   spring: spring rest
+
+
+
+
+
+
+
+
+
+
+
+
+
